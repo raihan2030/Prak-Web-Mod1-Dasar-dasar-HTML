@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            #header {
+                padding-top: 20px;
+                font-family: 'Arial', 'sans-serif';
+                color: crimson;
+                background-color: #48b4db;
+            }
+            #main {
+                background-color: grey;
+            }
+            #footer {
+                background-color: #ff707a;
+            }
+            #main, #footer {
+                padding: 5px;
+            }
+            #main td{
+                vertical-align: top;
+            }
+            h2 {
+                font-family: 'Arial', 'sans-serif';
+            }
+        </style>
+    </head>
+    <body>
+        <table border="3" width="600" align="center">
+            <tr>
+                <td id="header">
+                    <h1 align="center">Pendaftaran Kursus</h1>
+                </td>
+            </tr>
+            <tr>
+                <td id="main">
+                    <h2>Data Diri</h2>
+                    <form>
+                        <table width="400">
+                            <tr>
+                                <td width="45%">Nama</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Nim </td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td><input type="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td><input type="date"></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>
+                                    <input type="radio" name="jenis_kelamin" value="L">Laki-laki<br>
+                                    <input type="radio" name="jenis_kelamin" value="P">Perempuan
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pilih Program Kursus</td>
+                                <td>
+                                    <input type="checkbox" value="c_crs">C# <br>
+                                    <input type="checkbox" value="java">Java <br>
+                                    <input type="checkbox" value="sql">SQL <br>
+                                    <input type="checkbox" value="html_php">HTML dan PHP
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pilihan Hari/Jam Kursus</td>
+                                <td>
+                                    <select name="hari_jam">
+                                        <option value="pagi">Senin-Rabu/09.00-11.00</option>
+                                        <option value="siang">Rabu-Jumat/13.00-15.00</option>
+                                        <option value="Malam">Jumat-Sabtu/20.00-22.00</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    Komentar Anda <br>
+                    <textarea name="komentar" cols="60" rows="5"></textarea>
+                    <form action="" method="post" style="margin-top: 5px;">
+                        <input type="reset" name="Ulangi" value="Reset">
+                        <input type="submit" name="Kirim" value="Submit">
+                        <input type="button" name="Batal" value="Cancel">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
